@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>LEK5ON Calculator vol.2</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='style.css'>
+    <script src="main.js"></script>
+    
+</head>
+<body>
+    <header>
+        <div class="container w-100">
+            <h3 class="pt-4">Калькулятор расчёта покупки курса по трейдингу V 2.0</h3>
+        </div>
+    </header>
+    <div class="container">
+        <form class="mt-5">
+            <div class="form-group w-50  mx-auto" style="display: flex;flex-direction: column;">
+                <label class="text-center text-white"for="quantity">Количество:</label>
+                <input type="number" class="form-control text-form" id="quantity" placeholder="Введите количество товара">
+            </div>
+            
+                <div class="text-white text-center" style="display: flex;flex-direction: column;"id="radiosContainer">
+                    <label class="text-white text-center"for="kurses">Выберите Курс:</label>
+                    <div class="mt-2" id="kurses">
+                        <label class="mx-2"><input type="radio" name="prodOptions" value="option1"id="option1"> Спот Торговля</label>
+                        <label class="mx-2"><input type="radio" name="prodOptions" value="option2"id="option2"> Фьючерсная торговля</label>
+                        <label class="mx-2"><input type="radio" name="prodOptions" value="option3"id="option3"> Стейкинг</label>
+                    </div>
+                </div>
+                  
+            <div class="form-group w-50 mx-auto mt-2" style="display: flex;flex-direction: column;">
+                <label class="text"for="product" id="product-label">Выбрать Пакет:</label>
+                <select class="form-control text-form" id="product">
+                    <option value="item1">Пакет Стандарт</option>
+                    <option value="item2">Пакет Премиум</option>
+                    <option value="item3">Пакет Ультра</option>
+                </select>
+            </div>
+            <div class="text-white text-center mt-3"> 
+                <input class="mx-auto" type="checkbox" id="contract" name="contract" required>
+                <label for="contract" id="label-contract"> Доп. опция (Личная связь по вопросам курса)</label>
+            </div> 
+                <div class="mt-4">
+                    <h5 class="text"id="total">Итого: 0 рублей</h5>
+                </div>
+        </form>
+    </div>
+        
+    </div>
+    <div class="footer text-center text pt-2">
+        <h4 id="контактная-информация">Контактная информация</h4>
+        <h4>@ Савченко А.С.</h4>
+        <p>Почта: lek5on@yandex.ru</p>
+    </div>
+</body>
+</html>
