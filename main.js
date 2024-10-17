@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
           break;
       }
   
-      totalPrice = quantity * price;
+      totalPrice = Math.abs(quantity) * price;
       totalElement.textContent = `Итого: ${totalPrice.toFixed(2)} рублей`;
     }
   
