@@ -66,9 +66,15 @@ document.addEventListener('DOMContentLoaded', function () {
           }
           break;
       }
-  
+      if(isNaN(quantity) || quantity <=0){
+          totalElement.textContent = `Итого: 0 рублей (введите полож. число)`;
+          console.log("неправильное число");
+      }
+        else
+      {
       totalPrice = Math.abs(quantity) * price;
       totalElement.textContent = `Итого: ${totalPrice.toFixed(2)} рублей`;
+      }
     }
   
     // Event listeners for changes in quantity, product type, options, and property
